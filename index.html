@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mesón Restaurante El Rastrillo</title>
+  <meta name="description" content="Carta digital de Mesón Restaurante El Rastrillo">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="hero">
+  <div class="logo-wrap">
+    <img src="logo.png" class="logo" alt="El Rastrillo">
+</div>
+
+<<a href="#carta">
+  <img class="hero-photo" src="imagenes/portada.png" alt="Portada">
+</a>
+
+<a class="cta" href="#carta">Ver carta</a> 
+</header>
+
+<main id="carta">
+  <section class="intro">
+    <h2>Nuestra carta</h2>
+    <p>Selecciona una categoría para ver los platos.</p>
+  </section>
+
+  <nav class="categories" aria-label="Categorías">
+    <button data-filter="all" class="active">Toda la carta</button>
+    <button data-filter="raciones">Raciones</button>
+    <button data-filter="sopas">Sopas</button>
+    <button data-filter="pescados">Pescados y mariscos</button>
+    <button data-filter="combinados">Platos combinados</button>
+    <button data-filter="carnes">Carnes premium</button>
+    <button data-filter="arroces">Arroces</button>
+    <button data-filter="pastas">Pastas</button>
+    <button data-filter="postres">Postres</button>
+  </nav>
+
+  <section id="platos" class="grid" aria-live="polite"></section>
+</main>
+
+<div id="modal" class="modal" aria-hidden="true">
+  <button class="modal-close" aria-label="Cerrar">×</button>
+  <img id="modal-img" alt="">
+  <p id="modal-title"></p>
+</div>
+
+<footer>
+  <p>Mesón Restaurante El Rastrillo · Desde 1982</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
