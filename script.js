@@ -459,6 +459,34 @@ const dishes = [
 ];
 const categoryNames = {"raciones": "Raciones", "sopas": "Sopas", "pescados": "Pescados y mariscos", "combinados": "Platos combinados", "carnes": "Carnes premium", "arroces": "Arroces al momento", "pastas": "Pastas", "postres": "Postres"};
 
+const englishNames = {
+  1: "Russian salad", 2: "Three-seas salad", 3: "Steamed mussels", 4: "Mussels with vinaigrette",
+  5: "Galician-style octopus", 6: "Marinated anchovies", 7: "Octopus and king prawn seafood salad",
+  8: "Blanched cuttlefish", 9: "Cuttlefish in tomato sauce", 10: "Grilled cuttlefish",
+  11: "Fried cuttlefish", 12: "Battered squid rings", 13: "Fried baby cuttlefish",
+  14: "Baby squid in its own sauce", 15: "Baby octopus in tomato sauce", 16: "Octopus with artichokes",
+  17: "King prawns with garlic", 18: "Garlic prawns", 19: "King prawns in sauce with clams",
+  20: "Sauteed king prawns", 21: "Galician-style clams", 22: "Homemade croquettes",
+  23: "Patatas bravas", 24: "Potatoes with aioli", 25: "Free-range chicken thighs",
+  26: "Galician beef with honey", 27: "Lean pork in tomato sauce", 28: "Homemade meatballs",
+  29: "Braised pork cheeks", 30: "Meat-stuffed aubergine", 31: "Pepper stuffed with meat and rice",
+  32: "Fresh Basque-style hake", 33: "Rioja-style cod", 34: "Snails", 35: "Roast pork knuckle",
+  36: "Rabbit with garlic", 37: "Rabbit in tomato sauce", 38: "Blanched octopus", 39: "Oxtail stew",
+  40: "Seafood soup", 41: "House soup", 42: "Sea bream", 43: "Sea bass", 44: "Chargrilled salmon",
+  45: "Grilled hake", 46: "Fresh hake in seafood sauce", 47: "Chargrilled tuna",
+  48: "Chargrilled swordfish", 49: "Seafood zarzuela for two", 50: "Mixed seafood platter",
+  51: "Mediterranean red prawn", 52: "Variegated scallops", 53: "Mixed fried fish",
+  54: "Oven-roasted octopus", 55: "Galician-style octopus", 56: "Chargrilled octopus",
+  57: "Grilled chicken breast", 58: "Grilled pork loin / chestnut-fed pork loin",
+  59: "Galician beef or Angus steak", 60: "Galician or Angus T-bone steak",
+  61: "Galician blond, crossbred or yearling beef entrecote",
+  62: "Galician blond, crossbred, yearling or rose veal tenderloin", 63: "Mixed grilled meats",
+  64: "Mixed paella", 65: "Seafood paella", 66: "Rice with scarlet prawns", 67: "Rice with lobster",
+  68: "Spaghetti Bolognese", 69: "Seafood tagliatelle", 70: "Slice of cake",
+  71: "Calatrava bread pudding", 72: "Rice pudding", 73: "Strawberries with cream",
+  74: "Seasonal fruit", 75: "Tub of ice cream", 76: "Homemade desserts"
+};
+
 const grid = document.getElementById('platos');
 const buttons = document.querySelectorAll('[data-filter]');
 const modal = document.getElementById('modal');
@@ -471,15 +499,17 @@ function render(filter='all') {
     const card = document.createElement('article');
     card.className = 'card';
     card.innerHTML = `
-      <img src="${d.img}" alt="${d.name}" loading="lazy"
-           onerror="this.src='';this.alt='Falta subir la imagen ${String(d.n).padStart(2,'0')}.png'">
+      ${d.n === 59
+        ? '<div class="photo-placeholder"><span>Fotografía pendiente</span><small>Photo coming soon</small></div>'
+        : `<img src="imagenes-web/${d.img.replace('.png', '.jpg')}?v=20260714-4" alt="${d.name}" loading="lazy">`}
       <div class="card-body">
         <span class="number">Nº ${d.n}</span>
         <h3>${d.name}</h3>
         <div class="category-label">${categoryNames[d.cat]}</div>
       </div>`;
     card.addEventListener('click', () => {
-      modalImg.src = d.img;
+      if (d.n === 59) return;
+      modalImg.src = `imagenes-web/${d.img.replace('.png', '.jpg')}?v=20260714-4`;
       modalImg.alt = d.name;
       modalTitle.textContent = `Nº ${d.n} · ${d.name}`;
       modal.classList.add('open');
