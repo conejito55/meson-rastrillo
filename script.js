@@ -501,7 +501,7 @@ function render(filter='all') {
     card.innerHTML = `
       ${d.n === 59
         ? '<div class="photo-placeholder"><span>Fotografía pendiente</span><small>Photo coming soon</small></div>'
-        : `<img src="imagenes-web/${d.img.replace('.png', '.jpg')}?v=20260714-4" alt="${d.name}" loading="lazy">`}
+        : `<img src="imagenes-uniformes/${d.img}?v=20260714-7" alt="${d.name}" loading="lazy">`}
       <div class="card-body">
         <span class="number">Nº ${d.n}</span>
         <h3>${d.name}</h3>
@@ -509,7 +509,7 @@ function render(filter='all') {
       </div>`;
     card.addEventListener('click', () => {
       if (d.n === 59) return;
-      modalImg.src = `imagenes-web/${d.img.replace('.png', '.jpg')}?v=20260714-4`;
+      modalImg.src = `imagenes-uniformes/${d.img}?v=20260714-7`;
       modalImg.alt = d.name;
       modalTitle.textContent = `Nº ${d.n} · ${d.name}`;
       modal.classList.add('open');
