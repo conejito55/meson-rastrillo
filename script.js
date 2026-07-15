@@ -220,19 +220,19 @@ const dishes = [
     "n": 37,
     "name": "Conejo con tomate",
     "cat": "raciones",
-    "img": "37-uniforme.jpg"
+    "img": "37-uniforme-v2.png"
   },
   {
     "n": 38,
     "name": "Pulpo sanglochado",
     "cat": "raciones",
-    "img": "38-uniforme.jpg"
+    "img": "38-uniforme-v2.png"
   },
   {
     "n": 39,
     "name": "Rabo de toro",
     "cat": "raciones",
-    "img": "39-uniforme.jpg"
+    "img": "39-uniforme-v2.png"
   },
   {
     "n": 40,
@@ -406,13 +406,13 @@ const dishes = [
     "n": 68,
     "name": "Paella de mariscos",
     "cat": "arroces",
-    "img": "68-uniforme.jpg"
+    "img": "68-uniforme-v2.png"
   },
   {
     "n": 69,
     "name": "Arroz con carabineros",
     "cat": "arroces",
-    "img": "69-uniforme.jpg"
+    "img": "69-uniforme-v2.png"
   },
   {
     "n": 70,
@@ -541,14 +541,14 @@ function render(filter='all') {
     const card = document.createElement('article');
     card.className = 'card';
     card.innerHTML = `
-      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-10" alt="${d.name}" loading="lazy">${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
+      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-11" alt="${d.name}" loading="lazy">${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
       <div class="card-body">
         <span class="number">Nº ${d.n}</span>
         <h3>${d.name}</h3>
         <div class="category-label">${categoryNames[d.cat]}</div>
       </div>`;
     card.addEventListener('click', () => {
-      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-10`;
+      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-11`;
       modalImg.alt = d.name;
       modalNumberFix.hidden = true;
       modalPrice.hidden = !prices[d.n];
