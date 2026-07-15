@@ -4,475 +4,475 @@ const dishes = [
     "n": 1,
     "name": "Ensaladilla rusa",
     "cat": "raciones",
-    "img": "01.png"
+    "img": "01-uniforme.jpg"
   },
   {
     "n": 2,
     "name": "Ensalada 3 mares",
     "cat": "raciones",
-    "img": "02-v2.png"
+    "img": "02-uniforme.jpg"
   },
   {
     "n": 3,
     "name": "Mejillones al vapor",
     "cat": "raciones",
-    "img": "03-v2.png"
+    "img": "03-uniforme.jpg"
   },
   {
     "n": 4,
     "name": "Mejillones a la vinagreta",
     "cat": "raciones",
-    "img": "04.png"
+    "img": "04-uniforme.jpg"
   },
   {
     "n": 5,
     "name": "Mejillones a la marinera",
     "cat": "raciones",
-    "img": "05-v2.png"
+    "img": "05-uniforme.jpg"
   },
   {
     "n": 6,
     "name": "Boquerones en vinagre",
     "cat": "raciones",
-    "img": "06.png"
+    "img": "06-uniforme.jpg"
   },
   {
     "n": 7,
     "name": "Salpicón de pulpo y gambón",
     "cat": "raciones",
-    "img": "07.png"
+    "img": "07-uniforme.jpg"
   },
   {
     "n": 8,
     "name": "Sepia sanglochada",
     "cat": "raciones",
-    "img": "08.png"
+    "img": "08-uniforme.jpg"
   },
   {
     "n": 9,
     "name": "Sepia con tomate",
     "cat": "raciones",
-    "img": "09.png"
+    "img": "09-uniforme.jpg"
   },
   {
     "n": 10,
     "name": "Sepia a la plancha",
     "cat": "raciones",
-    "img": "10.png"
+    "img": "10-uniforme.jpg"
   },
   {
     "n": 11,
     "name": "Sepia frita",
     "cat": "raciones",
-    "img": "11.png"
+    "img": "11-uniforme.jpg"
   },
   {
     "n": 12,
     "name": "Calamares a la romana",
     "cat": "raciones",
-    "img": "12.png"
+    "img": "12-uniforme.jpg"
   },
   {
     "n": 13,
     "name": "Chopitos",
     "cat": "raciones",
-    "img": "13.png"
+    "img": "13-uniforme.jpg"
   },
   {
     "n": 14,
     "name": "Chipirones en su salsa",
     "cat": "raciones",
-    "img": "14.png"
+    "img": "14-uniforme.jpg"
   },
   {
     "n": 15,
     "name": "Púlpitos con tomate",
     "cat": "raciones",
-    "img": "15.png"
+    "img": "15-uniforme.jpg"
   },
   {
     "n": 16,
     "name": "Pulpo con alcachofas",
     "cat": "raciones",
-    "img": "16.png"
+    "img": "16-uniforme.jpg"
   },
   {
     "n": 17,
     "name": "Gambones al ajillo",
     "cat": "raciones",
-    "img": "17.png"
+    "img": "17-uniforme.jpg"
   },
   {
     "n": 18,
     "name": "Gambas al ajillo",
     "cat": "raciones",
-    "img": "18.png"
+    "img": "18-uniforme.jpg"
   },
   {
     "n": 19,
     "name": "Gambones en salsa con almejas",
     "cat": "raciones",
-    "img": "19.png"
+    "img": "19-uniforme.jpg"
   },
   {
     "n": 20,
     "name": "Gambones salteados",
     "cat": "raciones",
-    "img": "20.png"
+    "img": "20-uniforme.jpg"
   },
   {
     "n": 21,
     "name": "Almejas a la gallega",
     "cat": "raciones",
-    "img": "21.png"
+    "img": "21-uniforme.jpg"
   },
   {
     "n": 22,
     "name": "Croquetas caseras",
     "cat": "raciones",
-    "img": "22.png"
+    "img": "22-uniforme.jpg"
   },
   {
     "n": 23,
     "name": "Patatas bravas",
     "cat": "raciones",
-    "img": "23.png"
+    "img": "23-uniforme.jpg"
   },
   {
     "n": 24,
     "name": "Patatas alioli",
     "cat": "raciones",
-    "img": "24.png"
+    "img": "24-uniforme.jpg"
   },
   {
     "n": 25,
     "name": "Muslos de pollo campero",
     "cat": "raciones",
-    "img": "25.png"
+    "img": "25-uniforme.jpg"
   },
   {
     "n": 26,
     "name": "Ternera gallega a la miel",
     "cat": "raciones",
-    "img": "26.png"
+    "img": "26-uniforme.jpg"
   },
   {
     "n": 27,
     "name": "Magra con tomate",
     "cat": "raciones",
-    "img": "27.png"
+    "img": "27-uniforme.jpg"
   },
   {
     "n": 28,
     "name": "Albóndigas caseras",
     "cat": "raciones",
-    "img": "28.png"
+    "img": "28-uniforme.jpg"
   },
   {
     "n": 29,
     "name": "Carrillada",
     "cat": "raciones",
-    "img": "29.png"
+    "img": "29-uniforme.jpg"
   },
   {
     "n": 30,
     "name": "Berenjena rellena de carne",
     "cat": "raciones",
-    "img": "30.png"
+    "img": "30-uniforme.jpg"
   },
   {
     "n": 31,
     "name": "Pimiento relleno de carne y arroz",
     "cat": "raciones",
-    "img": "31-v2.png"
+    "img": "31-uniforme.jpg"
   },
   {
     "n": 32,
     "name": "Merluza fresca a la vasca",
     "cat": "raciones",
-    "img": "32.png"
+    "img": "32-uniforme.jpg"
   },
   {
     "n": 33,
     "name": "Bacalao a la riojana",
     "cat": "raciones",
-    "img": "33.png"
+    "img": "33-uniforme.jpg"
   },
   {
     "n": 34,
     "name": "Caracoles",
     "cat": "raciones",
-    "img": "34.png"
+    "img": "34-uniforme.jpg"
   },
   {
     "n": 35,
     "name": "Codillo asado",
     "cat": "raciones",
-    "img": "35.png"
+    "img": "35-uniforme.jpg"
   },
   {
     "n": 36,
     "name": "Conejo al ajillo",
     "cat": "raciones",
-    "img": "36.png"
+    "img": "36-uniforme.jpg"
   },
   {
     "n": 37,
     "name": "Conejo con tomate",
     "cat": "raciones",
-    "img": "37-v2.png"
+    "img": "37-uniforme.jpg"
   },
   {
     "n": 38,
     "name": "Pulpo sanglochado",
     "cat": "raciones",
-    "img": "38.png"
+    "img": "38-uniforme.jpg"
   },
   {
     "n": 39,
     "name": "Rabo de toro",
     "cat": "raciones",
-    "img": "39-v2.png"
+    "img": "39-uniforme.jpg"
   },
   {
     "n": 40,
     "name": "Sopa de mariscos",
     "cat": "sopas",
-    "img": "40.png"
+    "img": "40-uniforme.jpg"
   },
   {
     "n": 41,
     "name": "Sopa de la casa",
     "cat": "sopas",
-    "img": "41.png"
+    "img": "41-uniforme.jpg"
   },
   {
     "n": 42,
     "name": "Dorada",
     "cat": "pescados",
-    "img": "42.png"
+    "img": "42-uniforme.jpg"
   },
   {
     "n": 43,
     "name": "Lubina",
     "cat": "pescados",
-    "img": "43.png"
+    "img": "43-uniforme.jpg"
   },
   {
     "n": 44,
     "name": "Salmón a la brasa",
     "cat": "pescados",
-    "img": "44.png"
+    "img": "44-uniforme.jpg"
   },
   {
     "n": 45,
     "name": "Merluza a la plancha",
     "cat": "pescados",
-    "img": "45.png"
+    "img": "45-uniforme.jpg"
   },
   {
     "n": 46,
     "name": "Merluza fresca a la marinera",
     "cat": "pescados",
-    "img": "46.png"
+    "img": "46-uniforme.jpg"
   },
   {
     "n": 47,
     "name": "Atún a la brasa",
     "cat": "pescados",
-    "img": "47.png"
+    "img": "47-uniforme.jpg"
   },
   {
     "n": 48,
     "name": "Emperador a la brasa",
     "cat": "pescados",
-    "img": "48.png"
+    "img": "48-uniforme.jpg"
   },
   {
     "n": 49,
     "name": "Zarzuela de marisco para dos",
     "cat": "pescados",
-    "img": "49.png"
+    "img": "49-uniforme.jpg"
   },
   {
     "n": 50,
     "name": "Mariscada",
     "cat": "pescados",
-    "img": "50.png"
+    "img": "50-uniforme.jpg"
   },
   {
     "n": 51,
     "name": "Gamba roja",
     "cat": "pescados",
-    "img": "51.png"
+    "img": "51-uniforme.jpg"
   },
   {
     "n": 52,
     "name": "Zamburiñas",
     "cat": "pescados",
-    "img": "52.png"
+    "img": "52-uniforme.jpg"
   },
   {
     "n": 53,
     "name": "Fritura de pescado",
     "cat": "pescados",
-    "img": "53.png"
+    "img": "53-uniforme.jpg"
   },
   {
     "n": 54,
     "name": "Pulpo al horno",
     "cat": "pescados",
-    "img": "54.png"
+    "img": "54-uniforme.jpg"
   },
   {
     "n": 55,
     "name": "Pulpo a la gallega",
     "cat": "pescados",
-    "img": "55.png"
+    "img": "55-uniforme.jpg"
   },
   {
     "n": 56,
     "name": "Pulpo a la brasa",
     "cat": "pescados",
-    "img": "56.png"
+    "img": "56-uniforme.jpg"
   },
   {
     "n": 57,
     "name": "Semi-tataki",
     "cat": "pescados",
-    "img": "57-semi-tataki.png"
+    "img": "57-uniforme.jpg"
   },
   {
     "n": 58,
     "name": "Gallo Pedro",
     "cat": "pescados",
-    "img": "58-gallo-pedro.png"
+    "img": "58-uniforme.jpg"
   },
   {
     "n": 59,
     "name": "Rodaballo",
     "cat": "pescados",
-    "img": "59-rodaballo.png"
+    "img": "59-uniforme.jpg"
   },
   {
     "n": 60,
     "name": "Pechuga de pollo a la plancha",
     "cat": "combinados",
-    "img": "57.png"
+    "img": "60-uniforme.jpg"
   },
   {
     "n": 61,
     "name": "Lomo de cerdo / castaño a la plancha",
     "cat": "combinados",
-    "img": "58.png"
+    "img": "61-uniforme.jpg"
   },
   {
     "n": 62,
     "name": "Filete de ternera gallega o Angus",
     "cat": "combinados",
-    "img": "62-filete-ternera.png"
+    "img": "62-uniforme.jpg"
   },
   {
     "n": 63,
     "name": "Chuletón gallego o Angus",
     "cat": "carnes",
-    "img": "60.png"
+    "img": "63-uniforme.jpg"
   },
   {
     "n": 64,
     "name": "Entrecot de vaca rubia gallega, mestiza o añojo",
     "cat": "carnes",
-    "img": "61.png"
+    "img": "64-uniforme.jpg"
   },
   {
     "n": 65,
     "name": "Solomillo de vaca rubia gallega, mestiza, añojo o ternera rosada",
     "cat": "carnes",
-    "img": "62.png"
+    "img": "65-uniforme.jpg"
   },
   {
     "n": 66,
     "name": "Parrillada de carnes",
     "cat": "carnes",
-    "img": "63.png"
+    "img": "66-uniforme.jpg"
   },
   {
     "n": 67,
     "name": "Paella mixta",
     "cat": "arroces",
-    "img": "64.png"
+    "img": "67-uniforme.jpg"
   },
   {
     "n": 68,
     "name": "Paella de mariscos",
     "cat": "arroces",
-    "img": "65.png"
+    "img": "68-uniforme.jpg"
   },
   {
     "n": 69,
     "name": "Arroz con carabineros",
     "cat": "arroces",
-    "img": "66.png"
+    "img": "69-uniforme.jpg"
   },
   {
     "n": 70,
     "name": "Arroz con bogavante",
     "cat": "arroces",
-    "img": "67.png"
+    "img": "70-uniforme.jpg"
   },
   {
     "n": 71,
     "name": "Espaguetis a la boloñesa",
     "cat": "pastas",
-    "img": "68.png"
+    "img": "71-uniforme.jpg"
   },
   {
     "n": 72,
     "name": "Tagliatella a la marinera",
     "cat": "pastas",
-    "img": "69.png"
+    "img": "72-uniforme.jpg"
   },
   {
     "n": 73,
     "name": "Porción de tarta",
     "cat": "postres",
-    "img": "70.png"
+    "img": "73-uniforme.jpg"
   },
   {
     "n": 74,
     "name": "Pan de Calatrava",
     "cat": "postres",
-    "img": "71.png"
+    "img": "74-uniforme.jpg"
   },
   {
     "n": 75,
     "name": "Arroz con leche",
     "cat": "postres",
-    "img": "72.png"
+    "img": "75-uniforme.jpg"
   },
   {
     "n": 76,
     "name": "Fresas con nata",
     "cat": "postres",
-    "img": "73.png"
+    "img": "76-uniforme.jpg"
   },
   {
     "n": 77,
     "name": "Fruta de campaña",
     "cat": "postres",
-    "img": "74.png"
+    "img": "77-uniforme.jpg"
   },
   {
     "n": 78,
     "name": "Tarrina de helado",
     "cat": "postres",
-    "img": "75.png"
+    "img": "78-uniforme.jpg"
   },
   {
     "n": 79,
     "name": "Postres artesanales",
     "cat": "postres",
-    "img": "76.png"
+    "img": "79-uniforme.jpg"
   }
 ];
 const categoryNames = {"raciones": "Raciones", "sopas": "Sopas", "pescados": "Pescados y mariscos", "combinados": "Platos combinados", "carnes": "Carnes premium", "arroces": "Arroces al momento", "pastas": "Pastas", "postres": "Postres"};
@@ -541,17 +541,16 @@ function render(filter='all') {
     const card = document.createElement('article');
     card.className = 'card';
     card.innerHTML = `
-      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-7" alt="${d.name}" loading="lazy">${d.n >= 59 ? `<span class="image-badge-fix"><small>${categoryNames[d.cat]}</small><strong>${d.n}</strong></span>` : ''}${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
+      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-10" alt="${d.name}" loading="lazy">${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
       <div class="card-body">
         <span class="number">Nº ${d.n}</span>
         <h3>${d.name}</h3>
         <div class="category-label">${categoryNames[d.cat]}</div>
       </div>`;
     card.addEventListener('click', () => {
-      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-7`;
+      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-10`;
       modalImg.alt = d.name;
-      modalNumberFix.hidden = d.n < 59;
-      modalNumberFix.innerHTML = d.n >= 59 ? `<small>${categoryNames[d.cat]}</small><strong>${d.n}</strong>` : '';
+      modalNumberFix.hidden = true;
       modalPrice.hidden = !prices[d.n];
       modalPrice.textContent = prices[d.n] || '';
       modalTitle.textContent = `Nº ${d.n} · ${d.name}`;
@@ -577,3 +576,8 @@ function closeModal() {
 }
 
 render();
+
+const heroButton = document.querySelector('.hero-button');
+heroButton.addEventListener('click', () => {
+  document.body.classList.add('carta-abierta');
+});

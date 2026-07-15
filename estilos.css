@@ -6,6 +6,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--ink)}
+body:not(.carta-abierta) main,body:not(.carta-abierta) footer{display:none}
 .hero{position:relative;width:100%;height:100vh;height:100svh;padding:0;margin:0;overflow:hidden;background:#000;display:flex;align-items:center;justify-content:center}
 .hero-art{position:relative;width:100vw;height:100svh}
 .hero picture{display:block;width:100%;height:100%}
