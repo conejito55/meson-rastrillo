@@ -154,91 +154,91 @@ const dishes = [
     "n": 26,
     "name": "Ternera gallega a la miel",
     "cat": "raciones",
-    "img": "26-uniforme.jpg"
+    "img": "26-limpia.png"
   },
   {
     "n": 27,
     "name": "Magra con tomate",
     "cat": "raciones",
-    "img": "27-uniforme.jpg"
+    "img": "27-limpia.png"
   },
   {
     "n": 28,
     "name": "Albóndigas caseras",
     "cat": "raciones",
-    "img": "28-uniforme.jpg"
+    "img": "28-limpia.png"
   },
   {
     "n": 29,
     "name": "Carrillada",
     "cat": "raciones",
-    "img": "29-uniforme.jpg"
+    "img": "29-limpia.png"
   },
   {
     "n": 30,
     "name": "Berenjena rellena de carne",
     "cat": "raciones",
-    "img": "30-uniforme.jpg"
+    "img": "30-limpia.png"
   },
   {
     "n": 31,
     "name": "Pimiento relleno de carne y arroz",
     "cat": "raciones",
-    "img": "31-uniforme.jpg"
+    "img": "31-limpia.png"
   },
   {
     "n": 32,
     "name": "Merluza fresca a la vasca",
     "cat": "raciones",
-    "img": "32-uniforme.jpg"
+    "img": "32-limpia.png"
   },
   {
     "n": 33,
     "name": "Bacalao a la riojana",
     "cat": "raciones",
-    "img": "33-uniforme.jpg"
+    "img": "33-limpia.png"
   },
   {
     "n": 34,
     "name": "Caracoles",
     "cat": "raciones",
-    "img": "34-uniforme.jpg"
+    "img": "34-limpia.png"
   },
   {
     "n": 35,
     "name": "Codillo asado",
     "cat": "raciones",
-    "img": "35-uniforme.jpg"
+    "img": "35-limpia.png"
   },
   {
     "n": 36,
     "name": "Conejo al ajillo",
     "cat": "raciones",
-    "img": "36-uniforme.jpg"
+    "img": "36-limpia.png"
   },
   {
     "n": 37,
     "name": "Conejo con tomate",
     "cat": "raciones",
-    "img": "37-uniforme-v2.png"
+    "img": "37-limpia.png"
   },
   {
     "n": 38,
     "name": "Pulpo sanglochado",
     "cat": "raciones",
-    "img": "38-uniforme-v2.png"
+    "img": "38-limpia.png"
   },
   {
     "n": 39,
     "name": "Rabo de toro",
     "cat": "raciones",
-    "img": "39-uniforme-v2.png"
+    "img": "39-limpia.png"
   },
   {
     "n": 40,
     "name": "Sopa de mariscos",
     "cat": "sopas",
-    "img": "40-uniforme.jpg"
+    "img": "40-limpia.png"
   },
   {
     "n": 41,
@@ -542,18 +542,18 @@ function render(filter='all') {
     const card = document.createElement('article');
     card.className = 'card';
     card.innerHTML = `
-      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-26" alt="${d.name}" loading="lazy">${d.n > 25 ? '<span class="image-badge-eraser" aria-hidden="true"></span>' : ''}${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
+      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-27" alt="${d.name}" loading="lazy">${d.n > 40 ? '<span class="image-badge-eraser" aria-hidden="true"></span>' : ''}${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
       <div class="card-body">
         <span class="number">Nº ${d.n}</span>
         <h3>${d.name}</h3>
         <div class="category-label">${categoryNames[d.cat]}</div>
       </div>`;
     card.addEventListener('click', () => {
-      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-26`;
+      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-27`;
       modalImg.alt = d.name;
       modalNumberFix.className = 'image-badge-eraser';
       modalNumberFix.innerHTML = '';
-      modalNumberFix.hidden = d.n <= 25;
+      modalNumberFix.hidden = d.n <= 40;
       modalPrice.hidden = !prices[d.n];
       modalPrice.textContent = prices[d.n] || '';
       modalTitle.textContent = `Nº ${d.n} · ${d.name}`;
