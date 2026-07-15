@@ -370,7 +370,7 @@ const dishes = [
     "n": 62,
     "name": "Filete de ternera gallega o Angus",
     "cat": "combinados",
-    "img": "59.png"
+    "img": "62-filete-ternera.png"
   },
   {
     "n": 63,
@@ -506,12 +506,33 @@ const englishNames = {
   77: "Seasonal fruit", 78: "Tub of ice cream", 79: "Homemade desserts"
 };
 
+const prices = {
+  1: "7,00 €", 4: "10,00 € / 6,00 €", 5: "12,00 €",
+  7: "18,00 € / 12,00 €", 8: "15,00 €", 9: "15,00 €", 10: "18,00 €",
+  11: "18,00 €", 12: "12,00 €", 13: "10,00 €", 14: "12,00 €", 15: "12,00 €",
+  16: "15,00 €", 17: "12,00 €", 18: "12,00 €", 19: "18,00 €", 20: "15,00 €",
+  21: "15,00 €", 22: "1,50 € / unidad", 23: "7,00 €", 24: "6,00 €", 25: "10,00 €",
+  26: "15,00 €", 27: "10,00 €", 28: "4,50 € / unidad", 29: "4,50 € / unidad",
+  30: "12,00 €", 31: "10,00 €", 32: "20,00 €", 33: "18,00 €", 34: "10,00 €",
+  35: "12,00 €", 36: "15,00 €", 37: "15,00 €", 38: "15,00 €", 39: "22,00 €",
+  40: "15,00 €", 41: "10,00 €", 42: "Según mercado", 43: "Según mercado",
+  44: "18,00 €", 45: "Según mercado", 46: "22,00 €", 47: "18,00 €", 48: "18,00 €",
+  49: "60,00 €", 50: "Según mercado", 51: "Según mercado", 52: "4,50 € / unidad",
+  53: "50,00 €", 54: "Según mercado", 55: "Según mercado", 56: "Según mercado",
+  57: "25,00 €", 58: "Según mercado", 59: "Según mercado", 60: "15,00 €",
+  61: "13,00 € / 18,00 €", 62: "20,00 €", 63: "Según mercado", 64: "40,00 €",
+  65: "40,00 €", 66: "60,00 €", 67: "20,00 €", 68: "18,00 €", 69: "30,00 €",
+  70: "30,00 €", 71: "12,00 €", 72: "15,00 €", 73: "7,00 €", 74: "4,50 €",
+  75: "3,50 €", 76: "6,00 €", 77: "Según mercado", 78: "3,00 €", 79: "5,00 €"
+};
+
 const grid = document.getElementById('platos');
 const buttons = document.querySelectorAll('[data-filter]');
 const modal = document.getElementById('modal');
 const modalImg = document.getElementById('modal-img');
 const modalTitle = document.getElementById('modal-title');
 const modalNumberFix = document.getElementById('modal-number-fix');
+const modalPrice = document.getElementById('modal-price');
 
 function render(filter='all') {
   grid.innerHTML = '';
@@ -519,20 +540,19 @@ function render(filter='all') {
     const card = document.createElement('article');
     card.className = 'card';
     card.innerHTML = `
-      ${d.n === 62
-        ? '<div class="photo-placeholder"><span>Fotografía pendiente</span><small>Photo coming soon</small></div>'
-        : `<div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-2" alt="${d.name}" loading="lazy">${d.n >= 60 ? `<span class="image-number-fix">${d.n}</span>` : ''}</div>`}
+      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-4" alt="${d.name}" loading="lazy">${d.n >= 60 ? `<span class="image-number-fix">${d.n}</span>` : ''}${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
       <div class="card-body">
         <span class="number">Nº ${d.n}</span>
         <h3>${d.name}</h3>
         <div class="category-label">${categoryNames[d.cat]}</div>
       </div>`;
     card.addEventListener('click', () => {
-      if (d.n === 62) return;
-      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-2`;
+      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-4`;
       modalImg.alt = d.name;
       modalNumberFix.hidden = d.n < 60;
       modalNumberFix.textContent = d.n >= 60 ? d.n : '';
+      modalPrice.hidden = !prices[d.n];
+      modalPrice.textContent = prices[d.n] || '';
       modalTitle.textContent = `Nº ${d.n} · ${d.name}`;
       modal.classList.add('open');
       modal.setAttribute('aria-hidden','false');
