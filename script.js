@@ -244,91 +244,91 @@ const dishes = [
     "n": 41,
     "name": "Sopa de la casa",
     "cat": "sopas",
-    "img": "41-uniforme.jpg"
+    "img": "41-limpia.png"
   },
   {
     "n": 42,
     "name": "Dorada",
     "cat": "pescados",
-    "img": "42-uniforme.jpg"
+    "img": "42-limpia.png"
   },
   {
     "n": 43,
     "name": "Lubina",
     "cat": "pescados",
-    "img": "43-uniforme.jpg"
+    "img": "43-limpia.png"
   },
   {
     "n": 44,
     "name": "Salmón a la brasa",
     "cat": "pescados",
-    "img": "44-uniforme.jpg"
+    "img": "44-limpia.png"
   },
   {
     "n": 45,
     "name": "Merluza a la plancha",
     "cat": "pescados",
-    "img": "45-uniforme.jpg"
+    "img": "45-limpia.png"
   },
   {
     "n": 46,
     "name": "Merluza fresca a la marinera",
     "cat": "pescados",
-    "img": "46-uniforme.jpg"
+    "img": "46-limpia.png"
   },
   {
     "n": 47,
     "name": "Atún a la brasa",
     "cat": "pescados",
-    "img": "47-uniforme.jpg"
+    "img": "47-limpia.png"
   },
   {
     "n": 48,
     "name": "Emperador a la brasa",
     "cat": "pescados",
-    "img": "48-uniforme.jpg"
+    "img": "48-limpia.png"
   },
   {
     "n": 49,
     "name": "Zarzuela de marisco para dos",
     "cat": "pescados",
-    "img": "49-uniforme.jpg"
+    "img": "49-limpia.png"
   },
   {
     "n": 50,
     "name": "Mariscada",
     "cat": "pescados",
-    "img": "50-uniforme.jpg"
+    "img": "50-limpia.png"
   },
   {
     "n": 51,
     "name": "Gamba roja",
     "cat": "pescados",
-    "img": "51-uniforme.jpg"
+    "img": "51-limpia.png"
   },
   {
     "n": 52,
     "name": "Zamburiñas",
     "cat": "pescados",
-    "img": "52-uniforme.jpg"
+    "img": "52-limpia.png"
   },
   {
     "n": 53,
     "name": "Fritura de pescado",
     "cat": "pescados",
-    "img": "53-uniforme.jpg"
+    "img": "53-limpia.png"
   },
   {
     "n": 54,
     "name": "Pulpo al horno",
     "cat": "pescados",
-    "img": "54-uniforme.jpg"
+    "img": "54-limpia.png"
   },
   {
     "n": 55,
     "name": "Pulpo a la gallega",
     "cat": "pescados",
-    "img": "55-uniforme.jpg"
+    "img": "55-limpia.png"
   },
   {
     "n": 56,
@@ -542,18 +542,18 @@ function render(filter='all') {
     const card = document.createElement('article');
     card.className = 'card';
     card.innerHTML = `
-      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-27" alt="${d.name}" loading="lazy">${d.n > 40 ? '<span class="image-badge-eraser" aria-hidden="true"></span>' : ''}${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
+      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-28" alt="${d.name}" loading="lazy">${d.n > 55 ? '<span class="image-badge-eraser" aria-hidden="true"></span>' : ''}${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
       <div class="card-body">
         <span class="number">Nº ${d.n}</span>
         <h3>${d.name}</h3>
         <div class="category-label">${categoryNames[d.cat]}</div>
       </div>`;
     card.addEventListener('click', () => {
-      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-27`;
+      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-28`;
       modalImg.alt = d.name;
       modalNumberFix.className = 'image-badge-eraser';
       modalNumberFix.innerHTML = '';
-      modalNumberFix.hidden = d.n <= 40;
+      modalNumberFix.hidden = d.n <= 55;
       modalPrice.hidden = !prices[d.n];
       modalPrice.textContent = prices[d.n] || '';
       modalTitle.textContent = `Nº ${d.n} · ${d.name}`;
