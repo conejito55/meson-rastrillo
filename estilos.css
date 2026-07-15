@@ -24,7 +24,7 @@ main{max-width:1200px;margin:auto;padding:34px 18px 70px}
 .card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(70,49,28,.14)}
 .card:has(.photo-placeholder){cursor:default}
 .card-photo-wrap{position:relative;width:100%;aspect-ratio:3/2;overflow:hidden}
-.card img{width:100%;height:100%;object-fit:contain;object-position:center;display:block;background:#f7f4ed}
+.card img{width:100%;height:100%;object-fit:fill;display:block;background:#f7f4ed}
 .image-badge-fix{position:absolute;left:1.2%;top:1.5%;width:15.5%;height:29%;display:flex;align-items:center;justify-content:center;box-sizing:border-box;padding:1%;background:#7b171c;color:#fff;border:0;border-radius:0;font-family:Georgia,'Times New Roman',serif;line-height:1;text-align:center;z-index:3;box-shadow:none}
 .image-badge-fix small{display:flex;align-items:center;justify-content:center;width:96%;height:38%;overflow:hidden;overflow-wrap:normal;word-break:normal;white-space:normal;font-size:clamp(.24rem,.46vw,.48rem);font-weight:700;line-height:1.05}
 .image-badge-fix strong{font-size:clamp(1.25rem,3vw,2.8rem);font-weight:700;line-height:1}
