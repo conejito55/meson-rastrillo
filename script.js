@@ -94,31 +94,31 @@ const dishes = [
     "n": 16,
     "name": "Pulpo con alcachofas",
     "cat": "raciones",
-    "img": "16-uniforme.jpg"
+    "img": "16-limpia.png"
   },
   {
     "n": 17,
     "name": "Gambones al ajillo",
     "cat": "raciones",
-    "img": "17-uniforme.jpg"
+    "img": "17-limpia.png"
   },
   {
     "n": 18,
     "name": "Gambas al ajillo",
     "cat": "raciones",
-    "img": "18-uniforme.jpg"
+    "img": "18-limpia.png"
   },
   {
     "n": 19,
     "name": "Gambones en salsa con almejas",
     "cat": "raciones",
-    "img": "19-uniforme.jpg"
+    "img": "19-limpia.png"
   },
   {
     "n": 20,
     "name": "Gambones salteados",
     "cat": "raciones",
-    "img": "20-uniforme.jpg"
+    "img": "20-limpia.png"
   },
   {
     "n": 21,
@@ -542,18 +542,18 @@ function render(filter='all') {
     const card = document.createElement('article');
     card.className = 'card';
     card.innerHTML = `
-      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-21" alt="${d.name}" loading="lazy">${d.n > 15 ? '<span class="image-badge-eraser" aria-hidden="true"></span>' : ''}${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
+      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-22" alt="${d.name}" loading="lazy">${d.n > 20 ? '<span class="image-badge-eraser" aria-hidden="true"></span>' : ''}${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
       <div class="card-body">
         <span class="number">Nº ${d.n}</span>
         <h3>${d.name}</h3>
         <div class="category-label">${categoryNames[d.cat]}</div>
       </div>`;
     card.addEventListener('click', () => {
-      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-21`;
+      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-22`;
       modalImg.alt = d.name;
       modalNumberFix.className = 'image-badge-eraser';
       modalNumberFix.innerHTML = '';
-      modalNumberFix.hidden = d.n <= 15;
+      modalNumberFix.hidden = d.n <= 20;
       modalPrice.hidden = !prices[d.n];
       modalPrice.textContent = prices[d.n] || '';
       modalTitle.textContent = `Nº ${d.n} · ${d.name}`;
