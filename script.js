@@ -476,6 +476,7 @@ const dishes = [
   }
 ];
 const categoryNames = {"raciones": "Raciones", "sopas": "Sopas", "pescados": "Pescados y mariscos", "combinados": "Platos combinados", "carnes": "Carnes premium", "arroces": "Arroces al momento", "pastas": "Pastas", "postres": "Postres"};
+const badgeNames = {"raciones":"RACIONES","sopas":"SOPAS","pescados":"PESCADOS Y MARISCOS","combinados":"PLATOS COMBINADOS","carnes":"CARNES","arroces":"ARROCES","pastas":"PASTAS","postres":"POSTRES"};
 
 const englishNames = {
   1: "Russian salad", 2: "Three-seas salad", 3: "Steamed mussels", 4: "Mussels with vinaigrette",
@@ -541,16 +542,17 @@ function render(filter='all') {
     const card = document.createElement('article');
     card.className = 'card';
     card.innerHTML = `
-      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-11" alt="${d.name}" loading="lazy">${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
+      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-12" alt="${d.name}" loading="lazy"><span class="image-badge-fix"><small>${badgeNames[d.cat]}</small><strong>${String(d.n).padStart(2,'0')}</strong></span>${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
       <div class="card-body">
         <span class="number">Nº ${d.n}</span>
         <h3>${d.name}</h3>
         <div class="category-label">${categoryNames[d.cat]}</div>
       </div>`;
     card.addEventListener('click', () => {
-      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-11`;
+      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-12`;
       modalImg.alt = d.name;
-      modalNumberFix.hidden = true;
+      modalNumberFix.innerHTML = `<small>${badgeNames[d.cat]}</small><strong>${String(d.n).padStart(2,'0')}</strong>`;
+      modalNumberFix.hidden = false;
       modalPrice.hidden = !prices[d.n];
       modalPrice.textContent = prices[d.n] || '';
       modalTitle.textContent = `Nº ${d.n} · ${d.name}`;
