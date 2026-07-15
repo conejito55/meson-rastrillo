@@ -4,61 +4,61 @@ const dishes = [
     "n": 1,
     "name": "Ensaladilla rusa",
     "cat": "raciones",
-    "img": "01-uniforme.jpg"
+    "img": "01-limpia.png"
   },
   {
     "n": 2,
     "name": "Ensalada 3 mares",
     "cat": "raciones",
-    "img": "02-uniforme.jpg"
+    "img": "02-limpia.png"
   },
   {
     "n": 3,
     "name": "Mejillones al vapor",
     "cat": "raciones",
-    "img": "03-uniforme.jpg"
+    "img": "03-limpia.png"
   },
   {
     "n": 4,
     "name": "Mejillones a la vinagreta",
     "cat": "raciones",
-    "img": "04-uniforme.jpg"
+    "img": "04-limpia.png"
   },
   {
     "n": 5,
     "name": "Mejillones a la marinera",
     "cat": "raciones",
-    "img": "05-uniforme.jpg"
+    "img": "05-limpia.png"
   },
   {
     "n": 6,
     "name": "Boquerones en vinagre",
     "cat": "raciones",
-    "img": "06-uniforme.jpg"
+    "img": "06-limpia.png"
   },
   {
     "n": 7,
     "name": "Salpicón de pulpo y gambón",
     "cat": "raciones",
-    "img": "07-uniforme.jpg"
+    "img": "07-limpia.png"
   },
   {
     "n": 8,
     "name": "Sepia sanglochada",
     "cat": "raciones",
-    "img": "08-uniforme.jpg"
+    "img": "08-limpia.png"
   },
   {
     "n": 9,
     "name": "Sepia con tomate",
     "cat": "raciones",
-    "img": "09-uniforme.jpg"
+    "img": "09-limpia.png"
   },
   {
     "n": 10,
     "name": "Sepia a la plancha",
     "cat": "raciones",
-    "img": "10-uniforme.jpg"
+    "img": "10-limpia.png"
   },
   {
     "n": 11,
@@ -542,18 +542,18 @@ function render(filter='all') {
     const card = document.createElement('article');
     card.className = 'card';
     card.innerHTML = `
-      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-17" alt="${d.name}" loading="lazy"><span class="image-badge-eraser" aria-hidden="true"></span>${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
+      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-20" alt="${d.name}" loading="lazy">${d.n > 10 ? '<span class="image-badge-eraser" aria-hidden="true"></span>' : ''}${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
       <div class="card-body">
         <span class="number">Nº ${d.n}</span>
         <h3>${d.name}</h3>
         <div class="category-label">${categoryNames[d.cat]}</div>
       </div>`;
     card.addEventListener('click', () => {
-      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-17`;
+      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-20`;
       modalImg.alt = d.name;
       modalNumberFix.className = 'image-badge-eraser';
       modalNumberFix.innerHTML = '';
-      modalNumberFix.hidden = false;
+      modalNumberFix.hidden = d.n <= 10;
       modalPrice.hidden = !prices[d.n];
       modalPrice.textContent = prices[d.n] || '';
       modalTitle.textContent = `Nº ${d.n} · ${d.name}`;
