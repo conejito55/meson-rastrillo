@@ -542,16 +542,17 @@ function render(filter='all') {
     const card = document.createElement('article');
     card.className = 'card';
     card.innerHTML = `
-      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-12" alt="${d.name}" loading="lazy"><span class="image-badge-fix"><small>${badgeNames[d.cat]}</small><strong>${String(d.n).padStart(2,'0')}</strong></span>${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
+      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-17" alt="${d.name}" loading="lazy"><span class="image-badge-eraser" aria-hidden="true"></span>${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
       <div class="card-body">
         <span class="number">Nº ${d.n}</span>
         <h3>${d.name}</h3>
         <div class="category-label">${categoryNames[d.cat]}</div>
       </div>`;
     card.addEventListener('click', () => {
-      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-12`;
+      modalImg.src = `imagenes-uniformes/${d.img}?v=20260715-17`;
       modalImg.alt = d.name;
-      modalNumberFix.innerHTML = `<small>${badgeNames[d.cat]}</small><strong>${String(d.n).padStart(2,'0')}</strong>`;
+      modalNumberFix.className = 'image-badge-eraser';
+      modalNumberFix.innerHTML = '';
       modalNumberFix.hidden = false;
       modalPrice.hidden = !prices[d.n];
       modalPrice.textContent = prices[d.n] || '';
