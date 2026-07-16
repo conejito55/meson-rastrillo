@@ -394,85 +394,85 @@ const dishes = [
     "n": 66,
     "name": "Parrillada de carnes",
     "cat": "carnes",
-    "img": "66-uniforme.jpg"
+    "img": "66-limpia.png"
   },
   {
     "n": 67,
     "name": "Paella mixta",
     "cat": "arroces",
-    "img": "67-uniforme.jpg"
+    "img": "67-limpia.png"
   },
   {
     "n": 68,
     "name": "Paella de mariscos",
     "cat": "arroces",
-    "img": "68-uniforme-v2.png"
+    "img": "68-limpia.png"
   },
   {
     "n": 69,
     "name": "Arroz con carabineros",
     "cat": "arroces",
-    "img": "69-uniforme-v2.png"
+    "img": "69-limpia.png"
   },
   {
     "n": 70,
     "name": "Arroz con bogavante",
     "cat": "arroces",
-    "img": "70-uniforme.jpg"
+    "img": "70-limpia.png"
   },
   {
     "n": 71,
     "name": "Espaguetis a la boloñesa",
     "cat": "pastas",
-    "img": "71-uniforme.jpg"
+    "img": "71-limpia.png"
   },
   {
     "n": 72,
     "name": "Tagliatella a la marinera",
     "cat": "pastas",
-    "img": "72-uniforme.jpg"
+    "img": "72-limpia.png"
   },
   {
     "n": 73,
     "name": "Porción de tarta",
     "cat": "postres",
-    "img": "73-uniforme.jpg"
+    "img": "73-limpia.png"
   },
   {
     "n": 74,
     "name": "Pan de Calatrava",
     "cat": "postres",
-    "img": "74-uniforme.jpg"
+    "img": "74-limpia.png"
   },
   {
     "n": 75,
     "name": "Arroz con leche",
     "cat": "postres",
-    "img": "75-uniforme.jpg"
+    "img": "75-limpia.png"
   },
   {
     "n": 76,
     "name": "Fresas con nata",
     "cat": "postres",
-    "img": "76-uniforme.jpg"
+    "img": "76-limpia.png"
   },
   {
     "n": 77,
     "name": "Fruta de campaña",
     "cat": "postres",
-    "img": "77-uniforme.jpg"
+    "img": "77-limpia.png"
   },
   {
     "n": 78,
     "name": "Tarrina de helado",
     "cat": "postres",
-    "img": "78-uniforme.jpg"
+    "img": "78-limpia.png"
   },
   {
     "n": 79,
     "name": "Postres artesanales",
     "cat": "postres",
-    "img": "79-uniforme.jpg"
+    "img": "79-limpia.png"
   }
 ];
 const categoryNames = {"raciones": "Raciones", "sopas": "Sopas", "pescados": "Pescados y mariscos", "combinados": "Platos combinados", "carnes": "Carnes premium", "arroces": "Arroces al momento", "pastas": "Pastas", "postres": "Postres"};
@@ -542,7 +542,7 @@ function render(filter='all') {
     const card = document.createElement('article');
     card.className = 'card';
     card.innerHTML = `
-      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260715-29" alt="${d.name}" loading="lazy">${d.n > 65 ? '<span class="image-badge-eraser" aria-hidden="true"></span>' : ''}${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
+      <div class="card-photo-wrap"><img src="imagenes-uniformes/${d.img}?v=20260716-30" alt="${d.name}" loading="lazy">${prices[d.n] ? `<span class="image-price">${prices[d.n]}</span>` : ''}</div>
       <div class="card-body">
         <span class="number">Nº ${d.n}</span>
         <h3>${d.name}</h3>
@@ -553,7 +553,7 @@ function render(filter='all') {
       modalImg.alt = d.name;
       modalNumberFix.className = 'image-badge-eraser';
       modalNumberFix.innerHTML = '';
-      modalNumberFix.hidden = d.n <= 65;
+      modalNumberFix.hidden = true;
       modalPrice.hidden = !prices[d.n];
       modalPrice.textContent = prices[d.n] || '';
       modalTitle.textContent = `Nº ${d.n} · ${d.name}`;
