@@ -30,6 +30,7 @@ main{max-width:1200px;margin:auto;padding:34px 18px 70px}
 .image-badge-fix strong{font-size:clamp(1.25rem,3vw,2.8rem);font-weight:700;line-height:1}
 .image-badge-fix[hidden]{display:none}
 .image-badge-eraser{position:absolute;left:0;top:0;width:17%;height:31%;display:block;background:#f7f4ed;border:0;z-index:3}
+.image-badge-eraser[hidden]{display:none}
 .image-price{position:absolute;right:1.4%;bottom:2.2%;max-width:45%;padding:.45em .7em;background:#faf7f0;border:2px solid #b68022;border-radius:10px;color:#32160d;font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:clamp(.8rem,2vw,1.35rem);line-height:1.05;text-align:center;z-index:4;box-shadow:0 2px 7px rgba(0,0,0,.18)}
 .image-price[hidden]{display:none}
 .photo-placeholder{width:100%;aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;background:linear-gradient(135deg,#f0e6d8,#fffaf2);color:var(--muted);text-align:center}
